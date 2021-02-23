@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{D6F67458-B619-4AA0-A502-4DB314CE95EC}|Default">
+  <MonoDevelop.Ide.ItemProperties.InstagramProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstagramProject/wwwroot/js/Index.js">
+    <Files>
+      <File FileName="InstagramProject/Startup.cs" Line="26" Column="76" />
+      <File FileName="InstagramProject/Views/Home/Index.cshtml" Line="5" Column="31" />
+      <File FileName="InstagramProject/wwwroot/js/Index.js" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InstagramProject" expanded="True">
+            <Node name="InstagramProject" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True">
+                  <Node name="Index.js" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
