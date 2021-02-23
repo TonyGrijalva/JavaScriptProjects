@@ -83,7 +83,7 @@ yearSpan.innerHTML = "2021 ";
 div.appendChild(yearSpan);
 
 var myGramSpan = document.createElement("span");
-myGramSpan.innerHTML = "MyGram ";
+myGramSpan.innerHTML = "My Gram ";
 
 div.appendChild(myGramSpan);
 
@@ -94,3 +94,10 @@ var myBoolean = true;
 console.log(myNumber);
 console.log(myString);
 console.log(myBoolean);
+
+function ProductOfNumbers(x, y) {
+    var result = x / y;
+    console.log(result);
+}
+
+ProductOfNumbers(100, 50);
