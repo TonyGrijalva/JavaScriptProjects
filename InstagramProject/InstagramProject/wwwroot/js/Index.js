@@ -87,3 +87,10 @@ myGramSpan.innerHTML = "MyGram ";
 
 div.appendChild(myGramSpan);
 
+var myNumber = 10;
+var myString = "Ten";
+var myBoolean = true;
+
+console.log(myNumber);
+console.log(myString);
+console.log(myBoolean);
