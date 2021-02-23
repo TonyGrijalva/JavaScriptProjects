@@ -101,3 +101,14 @@ function ProductOfNumbers(x, y) {
 }
 
 ProductOfNumbers(100, 50);
+
+
+
+var a = "  My name is Marcos Grijalva  ";
+var b = a.substring(4);
+var c = a.trim();
+
+console.log(a);
+console.log(b);
+console.log(c);
+
