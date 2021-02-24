@@ -112,3 +112,11 @@ console.log(a);
 console.log(b);
 console.log(c);
 
+var date = new Date()
+
+console.log((date.getMonth() + 1).toString().padStart(2, "0") + "/" + date.getDate() + "/" + date.getFullYear());
+
+
+var date = new Date()
+
+document.write(date.toLocaleDateString("en-GB"));
