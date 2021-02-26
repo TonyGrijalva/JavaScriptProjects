@@ -4,7 +4,7 @@
     <Files>
       <File FileName="InstagramProject/Startup.cs" Line="26" Column="76" />
       <File FileName="InstagramProject/Views/Home/Index.cshtml" />
-      <File FileName="InstagramProject/wwwroot/js/Index.js" Line="122" Column="1" />
+      <File FileName="InstagramProject/wwwroot/js/Index.js" Line="122" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

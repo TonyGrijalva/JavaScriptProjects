@@ -87,6 +87,8 @@ myGramSpan.innerHTML = "My Gram ";
 
 div.appendChild(myGramSpan);
 
+/*
+
 var myNumber = 10;
 var myString = "Ten";
 var myBoolean = true;
@@ -120,3 +122,21 @@ console.log((date.getMonth() + 1).toString().padStart(2, "0") + "/" + date.getDa
 var date = new Date()
 
 document.write(date.toLocaleDateString("en-GB"));
+
+*/
+
+var a = new Date(1985, 10, 05);
+var b = new Date(2021, 10, 05);
+var c = a > b;
+
+switch (c) {
+    case false:
+        document.write("First date is less than second date");
+        break;
+    case true:
+        document.write("First date is greater than second date");
+        break;
+    default:
+        document.write("I don't recognize that option");
+        break;
+}
