@@ -19,30 +19,37 @@ var lineBreak = document.createElement("br")
 
 div.appendChild(lineBreak);
 
-var image1Span = document.createElement("span");
-image1Span.innerHTML = "Image 1 ";
+var table = document.createElement("table");
 
-div.appendChild(image1Span);
+var tBody = document.createElement("tbody");
+tBody.setAttribute("id", "ImagesBody");
 
-var image2Span = document.createElement("span");
-image2Span.innerHTML = "Image 2 ";
+table.appendChild(tBody);
+div.appendChild(table);
 
-div.appendChild(image2Span);
 
-var image3Span = document.createElement("span");
-image3Span.innerHTML = "Image 3 ";
+var tr = document.createElement("tr");
+var counter = 0;
+var td = null;
+var span = null;
 
-div.appendChild(image3Span);
 
-var image4Span = document.createElement("span");
-image4Span.innerHTML = "Image 4 ";
+for (var i = 1; i <= 25; i++) {
+    if (counter == 5) {
+        counter = 0;
+        tr = document.createElement("tr");
+    }
+    
+    td = document.createElement("td");
+    span = document.createElement("span");
+    span.innerHTML = "Image " + i;
+    td.appendChild(span);
+    tr.appendChild(td);
 
-div.appendChild(image4Span);
+    tBody.appendChild(tr);
+    counter++;
+}
 
-var image5Span = document.createElement("span");
-image5Span.innerHTML = "Image 5 ";
-
-div.appendChild(image5Span);
 
 var lineBreak2 = document.createElement("br")
 
@@ -86,57 +93,3 @@ var myGramSpan = document.createElement("span");
 myGramSpan.innerHTML = "My Gram ";
 
 div.appendChild(myGramSpan);
-
-/*
-
-var myNumber = 10;
-var myString = "Ten";
-var myBoolean = true;
-
-console.log(myNumber);
-console.log(myString);
-console.log(myBoolean);
-
-function ProductOfNumbers(x, y) {
-    var result = x / y;
-    console.log(result);
-}
-
-ProductOfNumbers(100, 50);
-
-
-
-var a = "  My name is Marcos Grijalva  ";
-var b = a.substring(4);
-var c = a.trim();
-
-console.log(a);
-console.log(b);
-console.log(c);
-
-var date = new Date()
-
-console.log((date.getMonth() + 1).toString().padStart(2, "0") + "/" + date.getDate() + "/" + date.getFullYear());
-
-
-var date = new Date()
-
-document.write(date.toLocaleDateString("en-GB"));
-
-*/
-
-var a = new Date(1985, 10, 05);
-var b = new Date(2021, 10, 05);
-var c = a > b;
-
-switch (c) {
-    case false:
-        document.write("First date is less than second date");
-        break;
-    case true:
-        document.write("First date is greater than second date");
-        break;
-    default:
-        document.write("I don't recognize that option");
-        break;
-}
