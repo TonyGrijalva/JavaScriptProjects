@@ -93,3 +93,13 @@ var myGramSpan = document.createElement("span");
 myGramSpan.innerHTML = "My Gram ";
 
 div.appendChild(myGramSpan);
+
+
+var person = { firstName: "Marcos", lastName: "Grijalva", age: 35 };
+document.write(person.firstName);
+document.write("<br>");
+document.write(person.lastName);
+document.write("<br>");
+document.write(person.age);
+document.write("<br>");
+document.write(typeof person);

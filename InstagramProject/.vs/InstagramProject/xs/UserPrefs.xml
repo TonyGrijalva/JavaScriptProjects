@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{D6F67458-B619-4AA0-A502-4DB314CE95EC}|Default">
   <MonoDevelop.Ide.ItemProperties.InstagramProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="InstagramProject/wwwroot/js/Index.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstagramProject/Views/Home/Index.cshtml">
     <Files>
       <File FileName="InstagramProject/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="InstagramProject/Views/Home/Index.cshtml" />
-      <File FileName="InstagramProject/wwwroot/js/Index.js" Line="39" Column="21" />
+      <File FileName="InstagramProject/Views/Home/Index.cshtml" Line="13" Column="17" />
+      <File FileName="InstagramProject/wwwroot/js/Index.js" />
+      <File FileName="InstagramProject/wwwroot/js/Image.js" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,12 +14,12 @@
             <Node name="InstagramProject" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True">
-                  <Node name="Index.js" selected="True" />
-                </Node>
+                <Node name="js" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
