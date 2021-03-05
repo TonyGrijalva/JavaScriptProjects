@@ -350,3 +350,5 @@
 /Users/marcosgrijalva/Desktop/Instagram/InstagramProject/InstagramProject/obj/Debug/netcoreapp3.1/InstagramProject.dll
 /Users/marcosgrijalva/Desktop/Instagram/InstagramProject/InstagramProject/obj/Debug/netcoreapp3.1/InstagramProject.pdb
 /Users/marcosgrijalva/Desktop/Instagram/InstagramProject/InstagramProject/obj/Debug/netcoreapp3.1/InstagramProject.genruntimeconfig.cache
+/Users/marcosgrijalva/Desktop/Instagram/InstagramProject/InstagramProject/obj/Debug/netcoreapp3.1/Razor/Views/Home/Registration.cshtml.g.cs
+/Users/marcosgrijalva/Desktop/Instagram/InstagramProject/InstagramProject/obj/Debug/netcoreapp3.1/Razor/Views/Home/Image.cshtml.g.cs
