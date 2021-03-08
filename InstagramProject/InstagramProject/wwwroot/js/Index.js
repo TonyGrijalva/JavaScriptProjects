@@ -42,21 +42,17 @@ for (var i = 1; i <= 25; i++) {
     
     td = document.createElement("td");
     span = document.createElement("span");
-    span.innerHTML = "Image " + i;
+    span.innerHTML = "imageName " + i;
     td.appendChild(span);
     tr.appendChild(td);
 
     tBody.appendChild(tr);
     counter++;
-
-    var image = new Object();
-   { imageName: "This", imageDescription: "Image", imagePrice: 30 };
-    document.write(image.imageName);
-    document.write("<br>");
-    document.write(image.imageDescription);
-    document.write("<br>");
-    document.write(image.imagePrice);
 }
+
+var image = new Object(); {
+    imageName: "This", imageDescription: "Image", imagePrice: 30
+};
 
 
 var lineBreak2 = document.createElement("br")
