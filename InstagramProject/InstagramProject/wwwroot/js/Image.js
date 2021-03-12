@@ -1,5 +1,5 @@
-﻿function Image(imageName, imageDescription, imagePrice) {
-    this.imageName = imageName;
-    this.imageDescription = imageDescription;
-    
+﻿function Image() {
+    this.imageName = "";
+    this.imageId = 0;
+    this.imagePath = "";
 }
