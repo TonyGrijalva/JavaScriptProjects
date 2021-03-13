@@ -128,6 +128,11 @@ englishSpan.innerHTML = "English ";
 div.appendChild(englishSpan);
 
 var yearSpan = document.createElement("span");
+
+var select = document.getElementById("Change Theme");
+select.onchange = function () {
+    alert("Test");
+}
 yearSpan.innerHTML = "2021 ";
 
 div.appendChild(yearSpan);
