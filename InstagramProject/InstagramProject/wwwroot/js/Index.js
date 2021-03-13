@@ -33,26 +33,6 @@ var counter = 0;
 
 
 
-for (var i = 1; i <= 25; i++) {
-    if (counter == 5) {
-        tbody.appendChild(trow);
-        trow = document.createElement("tr");
-        counter = 0;
-    }
-
-    
-    td = document.createElement("td");
-    imageSpan = document.createElement("span");
-    imageSpan.innerHTML = "Image " + i;
-
-    td.appendChild(imageSpan);
-    trow.appendChild(td);
-    counter++;
-}
-
-tbody.appendChild(trow);
-table.appendChild(tbody);
-div.appendChild(table);
 
 
     
@@ -65,18 +45,43 @@ div.appendChild(lineBreak2);
 
 "use strict";
 
-var product = new Image("Product", "Description", "Image", 25);
+//var product = new Image("Product", "Description", "Image", 25);
 
-var image1 = new Image();
-image1.imageName = "Image 1";
-image1.imageId = 1;
-image1.imagePath = "Any path";
+var imageList = [];
+var image = new Image();
+
+for (var i = 0; i < 25; i++) {
+    image = new Image();
+    image.imageName = "Image " + (i + 1);
+    image.imageId = (i + 1);
+    image.imagePath = "Any path";
+
+    imageList.push(image);
+}
 
 
+for (var i = 0; i < 25; i++) {
+    image = imageList[i];
+    if (counter == 5) {
+        tbody.appendChild(trow);
+        trow = document.createElement("tr");
+        counter = 0;
+    }
 
 
+    td = document.createElement("td");
+    imageSpan = document.createElement("span");
+    imageSpan.innerHTML = image.imageName;
 
- 
+    td.appendChild(imageSpan);
+    trow.appendChild(td);
+    counter++;
+}
+
+tbody.appendChild(trow);
+table.appendChild(tbody);
+div.appendChild(table);
+
 
 
 var image = new Object(); {
