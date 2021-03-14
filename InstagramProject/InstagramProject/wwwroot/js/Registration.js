@@ -107,11 +107,13 @@ var td = document.createElement("td");
 td.innerHTML = "Country of Residence: ";
 tr.appendChild(td);
 var td = document.createElement("td");
-var input = document.createElement("input");
-input.setAttribute("type", "text");
-input.setAttribute("placeholder", "USA");
+var select = document.createElement("select");
+select.setAttribute("type", "text");
+select.setAttribute("placeholder", "USA");
 
-td.appendChild(input);
+
+
+td.appendChild(select);
 tr.appendChild(td);
 
 

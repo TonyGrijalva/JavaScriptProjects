@@ -5,10 +5,14 @@ var div = document.getElementById("MyInstagramContainer");
 
 div.appendChild(span);
 
-var loginButton = document.createElement("button");
-loginButton.innerHTML = "Log in";
+var b = document.createElement("b");
+b.setAttribute("href", "Home/Login");
+var logInButton = document.createElement("button");
+logInButton.innerHTML = "Log in";
 
-div.appendChild(loginButton);
+b.appendChild(logInButton);
+
+div.appendChild(b);
 
 var a = document.createElement("a");
 a.setAttribute("href", "Home/Registration");

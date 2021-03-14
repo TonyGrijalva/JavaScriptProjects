@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script></script>
+
+<div id="MyDiv">
+    <form action="~/Home/LogUser" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>User</label>
+                    </td>
+                    <td>
+                        <input type="text" name="User"
+                               placeholder="Type your user name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="Password"
+                               placeholder="Type your password name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>Log In</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+
+
+
