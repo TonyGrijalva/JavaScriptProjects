@@ -108,12 +108,15 @@ td.innerHTML = "Country of Residence: ";
 tr.appendChild(td);
 var td = document.createElement("td");
 var select = document.createElement("select");
+select.setAttribute("id", "Country");
 var option = document.createElement("option");
 option.innerHTML = "USA";
-
-
-
 select.appendChild(option);
+var option = document.createElement("option");
+option.innerHTML = "Mexico";
+select.appendChild(option);
+
+
 td.appendChild(select);
 tr.appendChild(td);
 
@@ -144,3 +147,8 @@ div.appendChild(table);
 
 
 td.appendChild(input);
+
+
+button.onclick = function () {
+    alert("I am doing something second");
+};
