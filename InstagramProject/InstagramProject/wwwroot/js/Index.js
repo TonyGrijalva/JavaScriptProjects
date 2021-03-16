@@ -77,6 +77,7 @@ for (var i = 0; i < 25; i++) {
     imageSpan = document.createElement("span");
     imageSpan.innerHTML = image.imageName;
 
+    imageSpan.className = "CustomImages";
     td.appendChild(imageSpan);
     trow.appendChild(td);
     counter++;
@@ -88,9 +89,9 @@ div.appendChild(table);
 
 
 
-var image = new Object(); {
-//    imageName: "This", imageDescription: "Image", imagePrice: 30
-};
+//var image = new Object(); {
+////    imageName: "This", imageDescription: "Image", imagePrice: 30
+//};
 
 
 var imageArray = document.getElementsByClassName("CustomImages");
@@ -133,10 +134,13 @@ div.appendChild(englishSpan);
 
 var yearSpan = document.createElement("span");
 
-var select = document.getElementById("Change Theme");
-select.onchange = function () {
-    alert("Test");
+var select = document.getElementById("ChangeTheme");
+select.onchange = function (select) {
+    alert("You have changed the theme.");
 }
+
+
+
 yearSpan.innerHTML = "2021 ";
 
 div.appendChild(yearSpan);
