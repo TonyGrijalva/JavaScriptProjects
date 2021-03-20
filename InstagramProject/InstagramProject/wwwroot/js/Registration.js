@@ -19,6 +19,7 @@ var td = document.createElement("td");
 var input = document.createElement("input");
 input.setAttribute("type", "text");
 input.setAttribute("placeholder", "Add Your First Name: ");
+input.setAttribute("ID", "FirstName");
 
 td.appendChild(input);
 tr.appendChild(td);
@@ -29,6 +30,8 @@ var td = document.createElement("td");
 var input = document.createElement("input");
 input.setAttribute("type", "text");
 input.setAttribute("placeholder", "Add Your Last Name: ");
+input.setAttribute("ID", "LastName");
+
 td.appendChild(input);
 tr.appendChild(td);
 tbody.appendChild(tr);
@@ -41,6 +44,8 @@ tr.appendChild(td);
 var td = document.createElement("td");
 var input = document.createElement("input");
 input.setAttribute("type", "radio");
+input.setAttribute("ID", "Gender");
+
 
 td.appendChild(input);
 
@@ -95,6 +100,8 @@ var td = document.createElement("td");
 var input = document.createElement("input");
 input.setAttribute("type", "text");
 input.setAttribute("placeholder", "Add your Email Address: ");
+input.setAttribute("ID", "EmailAddress");
+
 
 td.appendChild(input);
 tr.appendChild(td);
@@ -104,7 +111,7 @@ tbody.appendChild(tr);
 var tr = document.createElement("tr");
 var td = document.createElement("td");
 
-td.innerHTML = "Country of Residence: ";
+td.innerHTML = "CountryOfResidence: ";
 tr.appendChild(td);
 var td = document.createElement("td");
 var select = document.createElement("select");
@@ -128,6 +135,13 @@ var td = document.createElement("td");
 
 
 
+var form = document.getElementById("MainForm");
+form.onsubmit = function (event) {
+    event.preventDefault();
+
+}
+
+
 var input = document.createElement("button");
 input.innerHTML = "Update User Information";
 tr.appendChild(td);
@@ -149,6 +163,51 @@ div.appendChild(table);
 td.appendChild(input);
 
 
-button.onclick = function () {
-    alert("I am doing something second");
-};
+//button.onclick = function () {
+//    alert("I am doing something second");
+//};
+
+var FirstNameInput = document.getElementById("FirstName");
+var LastNameInput = document.getElementById("LastName");
+var GenderInput = document.getElementById("Gender");
+var EmailAddressInput = document.getElementById("EmailAddress");
+var CountryOfResidenceInput = document.getElementById("CountryOfResidennce");
+var User = new User();
+User.firstName = FirstNameInput.value;
+User.lastName = LastNameInput.value;
+User.gender = GenderInput.value;
+User.emailAddress = EmailAddressInput.value;
+//User.countryOfResidence = CountryOfResidenceInput.value;
+
+
+td = document.createElement("td");
+button = document.createElement("button");
+button.innerHTML = "Add User";
+button.className = "AddUser";
+button.setAttribute("data-actual-user", JSON.stringify(User));
+td.appendChild(button);
+tr.appendChild(td);
+
+tbody.appendChild(tr);
+
+
+var buttonList = document.getElementsByClassName("AddUser");
+for (var x = 0; x < buttonList.length; x++) {
+    buttonList[x].onclick = function () {
+        var product = this.getAttribute("data-actual-user");
+
+        fetch("/Home/SaveUser", {
+            method: "POST",
+            cache: "no-cache",
+            headers: {
+                'Content-Type': "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify(User)
+        }).then(response => response.json())
+            .then(data => {
+                if (data == true) {
+                    alert("User was saved");
+                }
+            });
+    };
+}

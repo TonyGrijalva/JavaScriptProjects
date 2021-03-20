@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{D6F67458-B619-4AA0-A502-4DB314CE95EC}|Default">
   <MonoDevelop.Ide.ItemProperties.InstagramProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="InstagramProject/wwwroot/js/Index.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstagramProject/wwwroot/js/Registration.js">
     <Files>
-      <File FileName="InstagramProject/Views/Home/Registration.cshtml" Line="13" Column="1" IsPinned="True" />
+      <File FileName="InstagramProject/Views/Home/Registration.cshtml" Line="11" Column="17" IsPinned="True" />
       <File FileName="InstagramProject/Controllers/HomeController.cs" />
       <File FileName="InstagramProject/Views/Home/Index.cshtml" />
-      <File FileName="InstagramProject/wwwroot/js/Index.js" Line="137" Column="28" />
+      <File FileName="InstagramProject/wwwroot/js/Index.js" />
       <File FileName="InstagramProject/wwwroot/js/Image.js" />
-      <File FileName="InstagramProject/wwwroot/js/Registration.js" />
-      <File FileName="InstagramProject/Views/Home/Image.cshtml" />
+      <File FileName="InstagramProject/wwwroot/js/Registration.js" Line="199" Column="26" />
       <File FileName="InstagramProject/Views/Shared/_Layout.cshtml" />
-      <File FileName="InstagramProject/wwwroot/js/Login.js" />
-      <File FileName="InstagramProject/Views/Home/Login.cshtml" />
+      <File FileName="InstagramProject/Views/Home/Product.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +26,7 @@
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
                 <Node name="js" expanded="True">
-                  <Node name="Index.js" selected="True" />
+                  <Node name="Registration.js" selected="True" />
                 </Node>
               </Node>
               <Node name="appsettings.json" expanded="True" />

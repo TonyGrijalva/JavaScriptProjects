@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using InstagramProject.Models;
+using ShoppingCart.Models;
 
 namespace InstagramProject.Controllers
 {
@@ -49,6 +50,18 @@ namespace InstagramProject.Controllers
             string result = $"The user is {User} and the password is {Password}";
 
             return Content(result);
+        }
+
+        public bool SaveUser([FromBody] User user)
+        {
+            bool userWasSaved = false;
+
+            if (user!= null)
+            {
+                userWasSaved = true;
+            }
+
+            return userWasSaved;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
