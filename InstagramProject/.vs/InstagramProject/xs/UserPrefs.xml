@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{D6F67458-B619-4AA0-A502-4DB314CE95EC}|Default">
   <MonoDevelop.Ide.ItemProperties.InstagramProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="InstagramProject/wwwroot/js/Registration.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstagramProject/Views/Home/Product.cs">
     <Files>
-      <File FileName="InstagramProject/Views/Home/Registration.cshtml" Line="11" Column="17" IsPinned="True" />
-      <File FileName="InstagramProject/Controllers/HomeController.cs" />
-      <File FileName="InstagramProject/Views/Home/Index.cshtml" />
-      <File FileName="InstagramProject/wwwroot/js/Index.js" />
-      <File FileName="InstagramProject/wwwroot/js/Image.js" />
-      <File FileName="InstagramProject/wwwroot/js/Registration.js" Line="199" Column="26" />
-      <File FileName="InstagramProject/Views/Shared/_Layout.cshtml" />
-      <File FileName="InstagramProject/Views/Home/Product.cs" />
+      <File FileName="InstagramProject/Views/Home/Registration.cshtml" Line="12" Column="7" IsPinned="True" />
+      <File FileName="InstagramProject/Controllers/HomeController.cs" Line="56" Column="10" />
+      <File FileName="InstagramProject/wwwroot/js/Registration.js" Line="185" Column="33" />
+      <File FileName="InstagramProject/Views/Shared/_Layout.cshtml" Line="45" Column="1" />
+      <File FileName="InstagramProject/Views/Home/Product.cs" Line="20" Column="34" />
+      <File FileName="InstagramProject/wwwroot/js/User.js" Line="2" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,14 +18,14 @@
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Product.cs" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
-                <Node name="js" expanded="True">
-                  <Node name="Registration.js" selected="True" />
-                </Node>
+                <Node name="js" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
@@ -39,7 +37,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/marcosgrijalva/Desktop/Instagram/InstagramProject/InstagramProject/Controllers/HomeController.cs" relfile="InstagramProject/Controllers/HomeController.cs" line="57" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

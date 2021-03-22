@@ -1,7 +1,7 @@
 ﻿function User() {
-    this.firstName = "";
-    this.lastName = "";
-    this.gender = "";
-    this.emailAddress = "";
-    this.countryOfResidence = "";
+    this.FirstName = "";
+    this.LastName = "";
+    this.Gender = "";
+    this.EmailAddress = "";
+    this.CountryOfResidence = "";
 }

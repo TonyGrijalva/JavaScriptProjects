@@ -52,16 +52,9 @@ namespace InstagramProject.Controllers
             return Content(result);
         }
 
-        public bool SaveUser([FromBody] User user)
+        public IActionResult SaveUser([FromBody] User user)
         {
-            bool userWasSaved = false;
-
-            if (user!= null)
-            {
-                userWasSaved = true;
-            }
-
-            return userWasSaved;
+            return Content(user.ToString());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

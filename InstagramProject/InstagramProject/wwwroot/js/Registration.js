@@ -115,7 +115,7 @@ td.innerHTML = "CountryOfResidence: ";
 tr.appendChild(td);
 var td = document.createElement("td");
 var select = document.createElement("select");
-select.setAttribute("id", "Country");
+select.setAttribute("id", "CountryOfResidennce");
 var option = document.createElement("option");
 option.innerHTML = "USA";
 select.appendChild(option);
@@ -144,6 +144,7 @@ form.onsubmit = function (event) {
 
 var input = document.createElement("button");
 input.innerHTML = "Update User Information";
+input.setAttribute("id", "UpdateUser");
 tr.appendChild(td);
 
 
@@ -172,29 +173,15 @@ var LastNameInput = document.getElementById("LastName");
 var GenderInput = document.getElementById("Gender");
 var EmailAddressInput = document.getElementById("EmailAddress");
 var CountryOfResidenceInput = document.getElementById("CountryOfResidennce");
-var User = new User();
-User.firstName = FirstNameInput.value;
-User.lastName = LastNameInput.value;
-User.gender = GenderInput.value;
-User.emailAddress = EmailAddressInput.value;
-//User.countryOfResidence = CountryOfResidenceInput.value;
 
-
-td = document.createElement("td");
-button = document.createElement("button");
-button.innerHTML = "Add User";
-button.className = "AddUser";
-button.setAttribute("data-actual-user", JSON.stringify(User));
-td.appendChild(button);
-tr.appendChild(td);
-
-tbody.appendChild(tr);
-
-
-var buttonList = document.getElementsByClassName("AddUser");
-for (var x = 0; x < buttonList.length; x++) {
-    buttonList[x].onclick = function () {
-        var product = this.getAttribute("data-actual-user");
+var button = document.getElementById("UpdateUser");
+button.onclick = function () {
+    var user = new User();
+    user.FirstName = FirstNameInput.value;
+    user.LastName = LastNameInput.value;
+    user.Gender = GenderInput.value;
+    user.EmailAddress = EmailAddressInput.value;
+    user.CountryOfResidence = CountryOfResidenceInput.value;
 
         fetch("/Home/SaveUser", {
             method: "POST",
@@ -202,12 +189,9 @@ for (var x = 0; x < buttonList.length; x++) {
             headers: {
                 'Content-Type': "application/json; charset=UTF-8"
             },
-            body: JSON.stringify(User)
-        }).then(response => response.json())
+            body: JSON.stringify(user)
+        }).then(response => response.text())
             .then(data => {
-                if (data == true) {
-                    alert("User was saved");
-                }
+                alert(data);
             });
     };
-}
